@@ -23,7 +23,7 @@
 .navbar .brand{
 	display: inline-block;
 	background-image: url(../images/logo_2.png);
-	background-size: 40%;
+	background-size: 50% !important;
 	background-position: center center;
 	background-repeat: no-repeat;
 	/*隱藏h1文字*/
@@ -32,6 +32,9 @@
 	overflow: hidden;
 	left: 30px;
 }
+/* .navbar .brand h1{
+	display: inline-block;
+} */
 .navbar .nav{
 	float: right;
 }
@@ -137,26 +140,37 @@
 	/*border: solid 1px #666;*/
 	padding-top: 500px;
 	padding-bottom: 440px;
-	background-image: url(../images/kv_one.jpg);
+}
+.jumbotron.bg-kv{
+	width: 100%;
+	height: 100vh;
+	background-image: url(../images/kv_one.jpg) !important;
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
-/* .jumbotron .kv{
-	height: 100%;
-	max-width: 100%;	
-} */
 @media screen and (max-width: 768px){
 	.jumbotron{
 		padding-top: 360px;
 		padding-bottom: 560px;
 	}
+	.jumbotron.bg-kv{
+		background-image: url(../images/kv_three.jpg) !important;
+	}
 }
+/* @media screen and (max-width: 414px){
+	.jumbotron.bg-kv{
+		background-image: url(../images/kv_three.jpg);
+	}
+} */
 @media screen and (max-width: 1024px){
 	.jumbotron{
 		padding-top: 360px;
 		padding-bottom: 720px;
+	}
+	.jumbotron.bg-kv{
+		background-image: url(../images/kv_two.jpg);
 	}
 }
 /*btn*/
